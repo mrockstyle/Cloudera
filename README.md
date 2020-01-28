@@ -2,27 +2,8 @@
 # CDH OS Best Practice
 
 ## List
-- Hostname Resolution
-  ```
-  dig <hostname>
-  dig –x <ip_address_returned_from_hostname_lookup)
-  ```
-  ```
-  dig themis.apache.org
-  themis.apache.org.
-  1758
-  IN
-  A
-  140.211.11.105
-
-  dig -x 140.211.11.105
-  105.11.211.140.in-addr.arpa. 3513 IN
-
-  PTR
-  themis.apache.org.
-  ```
-
-- Functional Accounts
+- Add user
+- Passwordless
 - NTP
   ```
   systemctl start ntpd.service
